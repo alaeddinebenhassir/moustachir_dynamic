@@ -1,0 +1,587 @@
+@font-face{
+    font-family: Montserrat-Arabic-bold;
+    src: url(/font/ArbFonts/ArbFONTS-Montserrat-Arabic-Bold.ttf);
+    font-style: normal;
+}
+@font-face{
+    font-family: Montserrat-Arabic-light;
+    src: url(/font/ArbFonts/ArbFONTS-Montserrat-Arabic-Light.ttf);
+    font-style: normal;
+}
+@font-face{
+    font-family: Montserrat-Arabic-meduim;
+    src: url(/font/ArbFonts/ArbFONTS-Montserrat-Arabic-Medium.ttf);
+    font-style: normal;
+}
+@font-face{
+    font-family: Montserrat-Arabic-regular;
+    src: url(/font/ArbFonts/ArbFONTS-Montserrat-Arabic-Regular.ttf);
+    font-style: normal;
+}
+:root{
+    --Montserrat-regular : Montserrat-Arabic-regular;
+    --Montserrat-bold : Montserrat-Arabic-bold;
+    --Montserrat-meduim : Montserrat-Arabic-meduim;
+    --Montserrat-light : Montserrat-Arabic-light;
+
+}
+
+body{
+  width: 100vw;
+  height: max-content
+   ;
+}
+
+
+
+
+
+/*start background */
+
+.all .bg , .overlay {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0000;
+
+}
+.overlay{
+  background-color: #172C4B;
+  opacity: 0.7;
+}
+.container{
+  position: static;
+  z-index: 1;
+  
+}
+@media screen and (max-width : 450px) {
+  .all  .bg{
+    left: 50%;
+  }
+}
+
+
+/*end background*/
+
+
+/*start header */
+
+/*.header{
+    width: 95%;
+    margin: auto;
+    box-shadow: 0px 15px 16px rgba(0, 0, 0, 0.25);
+
+  }
+.header{
+    width: 95%;
+    margin: auto;
+    align-items: center;
+    background-color: white;
+}
+
+.header .navbar-brand{
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+    
+}
+.header .navbar-brand a{
+    display: flex;
+    align-items: center;
+}
+.header .navbar-brand img{
+    margin: 0 30px;
+
+}
+.header .navbar-brand h1{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--Montserrat-bold);
+    color: #172C4B;
+    margin: 0;
+
+}
+.header .navbar-toggler {
+    cursor: pointer;
+    border: none;
+    display: none;
+  }
+  .header .navbar-toggler:active {
+    border: none;
+  }
+  
+  .header .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #172C4B;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+.header .navbar-nav{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    direction: rtl;
+    margin-left: 40px;
+}
+.header .navbar-nav .nav-item .nav-link{
+    color: #172C4B;
+    font-size: 20px;
+    font-family: var(--Montserrat-meduim);
+}
+.header .navbar-nav .nav-item .active{
+    font-family: var(--Montserrat-bold);
+}
+.header .navbar-collapse .icon{
+    display: flex; 
+    direction: rtl;
+}
+.header .navbar-collapse .icon a{
+    margin: 0 10px; 
+}
+@media screen and (max-width : 400px) {
+  .navbar-brand h1{
+      font-size: 15px;
+  }
+  .navbar-brand img{
+    width: 30px;
+    margin: 0;
+}
+.navbar-nav{
+   margin: 0;
+}
+.header .navbar-collapse .icon a{
+  margin: 0 0px; 
+}
+}
+@media screen and (max-width : 992px) {
+    .header .navbar-collapse .icon{
+        padding-right: 40px;
+    }
+    .header .navbar-toggler{
+        display: inline-block;
+    }
+}
+@media screen and (min-width : 992px) {
+    .header .navbar-nav .nav-item .nav-link{
+        font-size: 12px;
+    }
+    .header .navbar-brand h1{
+        font-size: 12px;
+    }
+}
+@media screen and (min-width : 1200px) {
+  .header .navbar-nav .nav-item .nav-link{
+      font-size: 15px;
+  }
+  .header .navbar-brand h1{
+      font-size: 15px;
+  }
+}
+
+*/
+
+
+
+/*end of header */
+
+
+
+
+
+
+/*start of content */
+
+.content {
+    width: 85%;
+    margin: 50px auto;
+    height: max-content;
+    background-color: white;
+    padding: 20px;
+    position: relative;
+
+}
+.content::before{
+    content: '';
+    width: 105%;
+    height: 110%;
+    background-color: rgb(150, 147, 147 , 0.5);
+    position: absolute;
+    top: -5%;
+    left: -2.5%;
+    z-index: -1;
+}
+.entete{
+    width: 100%;
+    display: flex;
+    direction: rtl;
+    align-items: center;
+    padding: 30px;
+    font-family: var(--Montserrat-bold);
+}
+.entete h1{
+    flex: 1;
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    color: #172C4B;
+
+
+}
+
+.entete p{
+    float: left;
+    font-size: 30px;
+    margin: 0;
+    color: #172C4B;
+}  
+
+@media screen and (max-width : 450px) {
+  .content {
+    width: 95%;
+    height: max-content;
+}
+.entete{
+    width: 100%;
+}
+.entete h1{
+    flex: 1;
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+
+}
+
+.entete p{
+    float: left;
+    font-size: 20px;
+}
+}
+@media screen and (max-width : 992px) {
+  .content {
+    width: 95%;
+    height: max-content;
+}
+.entete{
+    width: 100%;
+}
+.entete h1{
+    flex: 1;
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+
+}
+
+.entete p{
+    float: left;
+    font-size: 20px;
+}
+}
+
+
+.page {
+    direction: ltr;
+    display: flex;
+    justify-content: space-between;
+    height: calc(100% - 190px);
+}
+
+.page form{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    color: #172C4B;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .page input,  .page textarea  , .page select{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 50px;
+    color: #172C4B;
+    border: 2px solid  #172C4B;
+    margin: 10px;
+    direction: rtl;
+  }
+
+  .page textarea{
+    height: 180px;
+
+  }
+  .page .img {
+    width: 50%;
+   
+  }
+
+  .page .img .imgsurface{
+    width: 80%;
+    height: 95%;
+    border : 2px dashed #172C4B;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px auto;
+    color: #172C4B;
+  }
+
+  .page .img .imgsurface img{
+        width: 160px;
+        height: 160px;
+  }
+  .page .img .imgsurface h1{
+    font-size: 18px;
+    margin: 0;
+    font-family: var(--Montserrat-bold);
+}
+@media screen and (max-width : 450px) {  
+    .page form{
+        margin:30px auto;
+    }
+    .page input,  .page textarea  , .page select{
+        width: 70%;
+        font-size: 15px;
+        padding:  10px;
+      }
+      .page .img .imgsurface img{
+        width: 60px;
+        height: 60px;
+      }
+      .page .img .imgsurface h1{
+       font-size: 12px;
+      }
+}
+  @media screen and (max-width : 992px) {
+    .page {
+        height: max-content;
+        flex-wrap: wrap;
+    } 
+    .page form{
+        height: max-content;
+        width: 100%;
+        margin:30px auto;
+        align-items: center;
+      }
+      .page input,  .page textarea  , .page select{
+        width: 70%;
+      }
+      .page .img {
+        width: 100%;
+        margin: 50px auto;
+        height: 50vw;
+      }
+}
+
+
+  .dates {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .dates h4{
+    font-size: 20px;
+    color: #969393;
+    font-family: var(--Montserrat-bold);
+
+  }
+  .page2 .calander{
+    width : 300PX;
+    height: 300PX ; 
+    direction: ltr;
+    font-family: sans-serif;
+    
+    
+  }
+
+
+  
+   .page2 .month{
+    width:100%;
+    height:50PX;
+    display : flex ;
+    justify-content : space-evenly ; 
+    align-items : center;
+    padding : 3px ;
+    text-align:center ;
+    font-family: var(--Montserrat-bold);
+    color: #172C4B;
+    
+  }
+   .page2 .month i {
+    font-size : 18px; 
+    cursor: pointer;
+    color: #172C4B;
+  }
+   .page2 .month .date {
+    height: max-content;
+    width: max-content;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #172C4B;
+    font-family: var(--Montserrat-bold);
+
+  }
+   .page2 .month .date h1 {
+    font-size :18px ; 
+    font-weight:400;
+    text-transform : uppercase ; 
+    height: max-content;
+    margin: 0%;
+    
+  }
+   .page2 .month .date p {
+    font-size : 12px ;
+    height: max-content;
+    direction: ltr;
+    margin: 0%;
+  }
+  
+   .page2 .weekdays {
+    width : 100% ;
+    height : 20px ; 
+    display : flex ;
+    align-items: center ; 
+    justify-content: space-between;
+    font-family: var(--Montserrat-regular);
+    color: #172C4B;
+  }
+   .page2 .weekdays div{
+    font-size : 18px ; 
+    font-weight: 400 ;
+    width : calc(100% / 7);
+    display : flex ; 
+    justify-content : center ; 
+    align-items :center ; 
+    color : #172C4B;
+    text-transform : capitalize ; 
+  }
+   .page2 .days {
+  width : 100%;
+  display : flex ; 
+  flex-wrap : wrap ; 
+  font-family: var(--Montserrat-regular);
+    color: #172C4B;
+  }
+  
+   .page2 .days div {
+    font-size :18px;
+    width : calc(100% /7);
+    height: 40px;
+    display: flex ; 
+    align-items : center ; 
+    justify-content:center ; 
+    color : #172C4B;
+    transition : background-color 0.2s;
+    margin-top: 5px;
+  }
+   .page2 .days div:hover:not(.today) {
+    background-color : #172C4B ;
+    color : white ; 
+    cursor : pointer ; 
+    opacity : 0.8
+  }
+    
+   .page2 .prev-date, .next-date {
+    opacity : 0.5;
+    
+  }
+   .page2 .days .today{
+    color: white;
+    background-color : #172C4B ;
+    color : white ; 
+    cursor : pointer ; 
+  }
+  @media screen and (max-width : 450px) {  
+    .dates {
+        width: 100%;
+        margin: 30px auto;
+
+      }
+      .page2 .calander{
+        width : 250PX;
+        height: 250PX ; 
+
+      }
+      .page2 .weekdays div{
+        font-size : 15px ; 
+      }
+      .page2 .days div {
+        font-size :15px;
+        width : calc(100% /7);
+        height: 35px;
+
+      }
+}
+  @media screen and (max-width : 992px) {
+    .dates {
+        width: 100%;
+        margin: 30px auto;
+      }
+}
+
+.page2 {
+    display: none;
+}
+
+
+
+.bttn {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 90%;
+    margin: 20px auto;
+    direction: rtl;
+    
+}
+
+
+.bttn button {
+    font-size: 20px;
+    font-family: var(--Montserrat-bold);
+    padding: 10px 50px;
+    border: 2px solid #172C4B;
+    
+}
+
+.bttn button a {
+  text-decoration: none;
+  color:  #172C4B;
+  
+}
+.bttn button:hover {
+   transform: scale(1.1);
+    
+}
+.bttn #prev {
+    color: #172C4B;
+    background-color: white;
+}
+.bttn #next {
+    background-color: #172C4B;
+    color: white;
+}
+
+@media screen and (max-width : 450px) {  
+    .bttn button {
+        font-size: 12px;
+        font-family: var(--Montserrat-bold);
+        padding: 3px 20px;
+        border: 2px solid #172C4B;
+        
+    }
+}
+  @media screen and (max-width : 992px) {
+    
+}
+
+/*end of content */

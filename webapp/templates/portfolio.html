@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/portfolio.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="all">
+      <img src="/img/bg.png" alt="" class="bg">
+      <div class="overlay"></div>
+      <div class="container">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img src="img/logo.svg" alt="">
+                    <h1>MOUSTACHIR</h1>
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">الصفحة الرئيسية</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">نبذة عن مستشير</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">الإستشــــــارت</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">مستشــــــارينــا</a>
+                      </li>
+                    </ul>
+                    <div class="icon">
+                        <a class="nav-link" href="#"><img src="img/account.svg" alt=""></a>
+                        <a class="nav-link" href="#"><img src="img/notif.svg" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <div class="content">
+            <div class="entete">
+              <h1>الملف الشخصي</h1>
+              <p id="nbrpage">1/2</p>
+            </div>
+            <div class="page page1 active" id="page1">
+                <div class="img">
+                  <div class="imgsurface">
+                    <img src="img/gallery-add.svg" alt="">
+                    <h1>أضف صورتك الشخصية</h1>
+                  </div>
+                    
+                </div>
+                <form class='form1' action="">
+                    <input type="text" name="" id="fullname" placeholder="الاسم الكامل">
+                    <input type="text" name="" id="education" placeholder="المسار التعليمي">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="نبذة عنــــي"></textarea>
+                </form>
+            </div>
+            <div class="page page2" id="page2">
+              <div class="dates">
+                <h4>الايام المتاحة</h4>
+                <div class='calander'>
+                  <div class='month'>
+                      <i class="prev fa-solid fa-angle-left"></i>
+                       <div class='date'>
+                         <h1>May</h1>
+                         <p>Fri May 29,2022</p>
+                       </div>
+                       <i class="next fa-solid fa-angle-right"></i> 
+                  </div>
+                  <div class='weekdays'>
+                       <div>sun</div> 
+                       <div>mon</div>
+                       <div>tue</div> 
+                       <div>wen</div>
+                       <div>thu</div> 
+                       <div>fri</div>
+                       <div>sat</div> 
+                  </div>
+                  <div class="days">
+                       
+                  </div> 
+                       
+                   
+               </div>
+              </div>
+                <form class='form2' action="">
+                    <select name="" id="" >
+                      <option value="" class="title">الساعات المتاحة</option>
+                    </select>
+                    <input type="number" name="" id="education" placeholder="المبلغ للساعة الواحدة">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="التخصصات"></textarea>
+                </form>
+            </div>
+            <div class="bttn">
+                <button id="prev"><a href='/updatebrief.html'>السابق</a></button>
+                <button id="next">التــالـــي</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+</html>

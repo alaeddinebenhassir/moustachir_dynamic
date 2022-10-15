@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moustachir| Reservation</title>
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="/css/reservstyle.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="pict">
+                <img src="/img/YESSS_Plan de travail 1 5.svg" alt="">
+                <h4>الدكتور رياض بغدادي</h4>
+            </div>
+            <h1 class="title">الحجـــــــــــــــز</h1>
+        </header>
+        <div class="content">
+            <aside>
+                <ul>
+                    <li id="first"> <span id="active" class="page1 active">1</span><p>التاريـــــخــ والوقــــــــــت</p></li>
+                    <li id="second"> <span class="page2 ">2</span><p>معلوماتكــ الشخصية</p></li>
+                    <li id="third"> <span class="page3 ">3</span><p>الدفـــعـــ و التأكيـــــــــــد</p></li>
+                    
+                </ul>
+            </aside>
+            <div class="date active">
+                <div class="datereserv">
+                    <H3>التاريـــــخــ</H3>
+                    <div class='calander'>
+                        <div class='month'>
+                            <i class="prev fa-solid fa-angle-left"></i>
+                             <div class='date'>
+                               <h1>May</h1>
+                               <p>Fri May 29,2022</p>
+                             </div>
+                             <i class="next fa-solid fa-angle-right"></i> 
+                        </div>
+                        <div class='weekdays'>
+                             <div>sun</div> 
+                             <div>mon</div>
+                             <div>tue</div> 
+                             <div>wen</div>
+                             <div>thu</div> 
+                             <div>fri</div>
+                             <div>sat</div> 
+                        </div>
+                        <div class="days">
+                             
+                        </div> 
+                             
+                         
+                     </div>
+                </div>
+                <div class="time">
+                    <h4 class="tit">الأوقات المتاحة</h4>
+                    <h5>من <span id="debut">17</span>:00 إلى <span id="fin">20</span>:00</h5>
+                    <div>
+                        <h4>عدد الساعات :</h4>
+                        <img id='plus'src="/img/tridroite.svg" alt="">
+                        <input id="hour" type="number" value="0">
+                        <img id='moins'  src="/img/trigauche.svg" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="info">
+                <form action="">
+                    <input type="text" name="" id="name" placeholder="الإسم الكامل" >
+                    <input type="email" name="" id="email" placeholder="البريد الإلكتروني*" required>
+                    <textarea name="" id="desc" cols="30" rows="10" placeholder="نبذة عن موضوع الاستشارة"></textarea>
+                </form>
+            </div>
+            <div class="paye">
+                <h1>إختر طريقة الدفع المناسبة لك</h1>
+                <div class="type">
+                    <div class="cards">
+                        <a href="#" class="card">
+                            <img id='cib' src="/img/cib.png" alt="pict">
+                            <h4>CIB</h4>
+                        </a>
+                        <a href="https://www.poste.dz/#homepage" class="card">
+                            <img id='gold' src="/img/gold.png" alt="pict">
+                            <h4>البطاقة الذهبية</h4>
+                        
+                        <a href="#" class="card">
+                            <img id='cpa' src="/img/cpa.png" alt="pict">
+                            <h4>CPA BANK</h4>
+                        </a>
+                        <a href="#" class="card">
+                            <img id='bna' src="/img/bna.png" alt="pict">
+                            <h4>BNA BANK</h4>
+                        </a>
+                    </div>
+                    <div class="prix">
+                        <h4>سعر الإستشارة</h4>
+                        <h4>2600 دج</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="btn">
+                <button class="next">التــــــــــالــــــي</button>
+                <button class="previous"><a href='/brief.html'>السـابـــــقــــــــ</a></button>
+            </div>
+        </footer>
+        <div class="bnainfo" id="bnainfo">
+            <div class="titl">
+                <img src="/img/bna.svg" alt="">
+                <h3>BNA BANK</h3>
+            </div>
+            <ul class="inf">
+                <li>
+                    <h6 class="titre">
+                        إسم الحساب
+                    </h6>
+                    <h4 class="value">
+                        SARL MOUSTACHIR                </h4>
+                </li>
+                <li>
+                    <h6 class="titre">
+                        رقم الحساب
+                    </h6>
+                    <h4 class="value">
+                        004 00139 4040120826 83            </li>
+                <li>
+                    <h6 class="titre">
+                        المبلغ         
+                    </h6>
+                    <h4 class="value">
+                        2600 دج       
+                    </h4>
+                </li>
+            </ul>
+        </div>
+        <div class="cpainfo" id="cpainfo">
+            <div class="titl">
+                <img src="/img/cpa.svg" alt="">
+                <h3>CPA BANK</h3>
+            </div>
+            <ul class="inf">
+                <li>
+                    <h6 class="titre">
+                        إسم الحساب
+                    </h6>
+                    <h4 class="value">
+                        SARL MOUSTACHIR                </h4>
+                </li>
+                <li>
+                    <h6 class="titre">
+                        رقم الحساب
+                    </h6>
+                    <h4 class="value">
+                        004 00139 4040120826 83            </li>
+                <li>
+                    <h6 class="titre">
+                        المبلغ         
+                    </h6>
+                    <h4 class="value">
+                        2600 دج       
+                    </h4>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="/js/script.js"></script>
+
+</body>
+</html>
