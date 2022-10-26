@@ -1,0 +1,227 @@
+@font-face{
+    font-family: Montserrat-Arabic-bold;
+    src: url(/font/ArbFonts/ArbFONTS-Montserrat-Arabic-Bold.ttf);
+    font-style: normal;
+}
+@font-face{
+    font-family: Montserrat-Arabic-light;
+    src: url(/font/ArbFonts/ArbFONTS-Montserrat-Arabic-Light.ttf);
+    font-style: normal;
+}
+@font-face{
+    font-family: Montserrat-Arabic-meduim;
+    src: url(/font/ArbFonts/ArbFONTS-Montserrat-Arabic-Medium.ttf);
+    font-style: normal;
+}
+@font-face{
+    font-family: Montserrat-Arabic-regular;
+    src: url(/font/ArbFonts/ArbFONTS-Montserrat-Arabic-Regular.ttf);
+    font-style: normal;
+}
+:root{
+    --Montserrat-regular : Montserrat-Arabic-regular;
+    --Montserrat-bold : Montserrat-Arabic-bold;
+    --Montserrat-meduim : Montserrat-Arabic-meduim;
+    --Montserrat-light : Montserrat-Arabic-light;
+
+}
+/*.header{
+    width: 95%;
+    margin: auto;
+    box-shadow: 0px 15px 16px rgba(0, 0, 0, 0.25);
+}
+.header{
+    width: 95%;
+    margin: auto;
+    align-items: center;
+}
+
+.header .navbar-brand{
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+}
+.header .navbar-brand a{
+    display: flex;
+    align-items: center;
+}
+.header .navbar-brand img{
+    margin: 0 30px;
+
+}
+.header .navbar-brand h1{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--Montserrat-bold);
+    color: #172C4B;
+    margin: 0;
+
+}
+.header .navbar-toggler {
+    cursor: pointer;
+    border: none;
+    display: none;
+  }
+  
+  .header .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #172C4B;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+.header .navbar-nav{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    direction: rtl;
+    margin-left: 40px;
+}
+.header .navbar-nav .nav-item .nav-link{
+    color: #172C4B;
+    font-size: 20px;
+    font-family: var(--Montserrat-meduim);
+}
+.header .navbar-nav .nav-item .active{
+    font-family: var(--Montserrat-bold);
+}
+.header .navbar-collapse .icon{
+    display: flex; 
+    direction: rtl;
+}
+.header .navbar-collapse .icon a{
+    margin: 0 10px; 
+}
+@media screen and (max-width : 992px) {
+    .header .navbar-collapse .icon{
+        padding-right: 40px;
+    }
+    .header .navbar-toggler{
+        display: inline-block;
+    }
+}
+@media screen and (min-width : 992px) {
+    .header .navbar-nav .nav-item .nav-link{
+        font-size: 15px;
+    }
+    .header .navbar-brand h1{
+        font-size: 15px;
+    }
+}*/
+
+
+/* login form*/
+.login {
+    width: 70%;
+    height: 80VH;
+    margin: 30px auto;
+    display: flex;
+    border: 5px solid #172C4B;
+
+}
+.login .formulaire{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.login .formulaire h1{
+    text-align: center;
+    width: 100%;
+    margin: 0%;
+    font-family: var(--Montserrat-bold);
+    color: #172C4B;
+    margin-bottom: 20px;
+    font-size: 45px;
+}
+.login .formulaire p{
+    font-family: var(--Montserrat-regular);
+    color: #172C4B;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.login .formulaire form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    justify-content: space-between;
+}
+
+.login .formulaire form input{
+    width: 80%;
+    margin: auto;
+    direction: rtl;
+    padding: 15px;
+    font-size: 15px;
+    font-family: var(--Montserrat-bold);
+    border-color: #172C4B;
+}
+.login .formulaire form #submit{
+    width: 40%;
+    background-color: #172C4B;
+    color: white;
+    position: relative;
+    transition: 0.6S;
+}
+.login .formulaire form #submit:hover{
+    transform: scale(1.1);
+}
+
+.login .formulaire form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    justify-content: space-between;
+}
+
+.login .logo {
+    background-color: #172C4B;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.login .logo img {
+    width: 50%;
+}
+
+.login .logo h1 {
+    
+    color: white;
+    font-family: var(--Montserrat-bold);
+}
+@media screen and (max-width : 600px) {
+    .login .formulaire h1{
+        font-size: 30px;
+    }
+    .login .formulaire p{
+        font-size: 15px;
+        text-align: center;
+    }
+    .login .formulaire form #submit{
+        font-size: 15px;
+        width: 60%;
+    }
+   
+}
+@media screen and (max-width : 992px) {
+    .login .formulaire{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .login .logo {
+        display: none;
+    }
+}
+@media screen and (min-width : 992px) {
+    
+}
+

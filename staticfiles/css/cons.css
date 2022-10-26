@@ -1,0 +1,120 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: #172C4B;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face{
+    font-family: Montserrat-Arabic-bold;
+    src: url(/font/ArbFonts/ArbFONTS-Montserrat-Arabic-Bold.ttf);
+    font-style: normal;
+}
+@font-face{
+    font-family: Montserrat-Arabic-light;
+    src: url(/font/ArbFonts/ArbFONTS-Montserrat-Arabic-Light.ttf);
+    font-style: normal;
+}
+@font-face{
+    font-family: Montserrat-Arabic-meduim;
+    src: url(/font/ArbFonts/ArbFONTS-Montserrat-Arabic-Medium.ttf);
+    font-style: normal;
+}
+@font-face{
+    font-family: Montserrat-Arabic-regular;
+    src: url(/font/ArbFonts/ArbFONTS-Montserrat-Arabic-Regular.ttf);
+    font-style: normal;
+}
+:root{
+    --Montserrat-regular : Montserrat-Arabic-regular;
+    --Montserrat-bold : Montserrat-Arabic-bold;
+    --Montserrat-meduim : Montserrat-Arabic-meduim;
+    --Montserrat-light : Montserrat-Arabic-light;
+
+}
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+@media screen and (max-width: 992px){
+   .container {
+    width: calc(100%-30px);
+    padding: 0 15px;
+   }
+}
+
+
+/*navbar*/
+
+
+
+/*content*/
+
+
+
+.content{
+    width: 100%;
+}
+.content h1{
+    font-size: 35px;
+    font-family: var(--Montserrat-bold);
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+}
+@media screen and (max-width: 600px){
+    .content h1{
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+.content .cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 200Px;
+    justify-content: space-between;
+    
+
+}
+.content .cards .card{
+    width: 250px;
+    height: 200px;
+    border-radius: 6px;
+    box-shadow: 2px 14px 32px rgba(0, 0, 0, 0.17);
+    position: relative;
+    padding: 10px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    margin: 0 20PX;
+    margin-bottom: 150px;
+    text-decoration: none;
+    
+    
+}
+.content .cards .card:hover{
+    transform: scale(1.1);
+    transition: 0.6S;
+}
+
+.content .cards .card img{
+   position: absolute; 
+   top: -120%;
+}
+.content .cards .card h3{
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin: 30px 0;
+    color: #172C4B;
+    width: max-content;
+    font-family: var(--Montserrat-regular);
+}

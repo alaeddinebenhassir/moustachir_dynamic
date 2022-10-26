@@ -9,7 +9,9 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
-
+import django
+from django.utils.encoding import smart_str
+django.utils.encoding.smart_text = smart_str
 from pathlib import Path
 import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -26,7 +28,7 @@ SECRET_KEY = 'django-insecure-wu&g06j2qri2%x&luu4!mv(j+=w109&c-jdp+ff1%t*stmul=!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['40.66.45.238','app.moustachir.net']
+ALLOWED_HOSTS = ['40.66.45.238','app.moustachir.net','localhost','127.0.0.1']
 
 
 # Application definition
@@ -39,8 +41,17 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'webapp.apps.WebappConfig',
+    'river',
+    'rest_framework.authtoken',
+    'river_admin'
 ]
-
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    ],
+    'EXCEPTION_HANDLER': 'river_admin.views.exception_handler'
+}
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -52,7 +63,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'moustachir.urls'
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
